@@ -41,7 +41,7 @@ body {
 .card-container {
   max-width: 1440px;
   /* height: 100vh; */
-  height: auto;
+  height: 100vh;
   background-image: url("./images/pattern-background-desktop.svg");
   background-repeat: no-repeat;
   background-position: cover;
@@ -53,7 +53,7 @@ body {
 }
 
 .card {
-  max-width: 375px;
+  max-width: 400px;
   /* border: 2px solid black; */
   display: flex;
   flex-direction: column;
@@ -88,7 +88,7 @@ body {
 .summary-content {
   color: var(--desaturated-blue);
   text-align: center;
-  font-size: 0.9rem;
+  font-size: 1rem;
   line-height: 1.3rem;
 }
 
@@ -132,6 +132,7 @@ body {
 .plan-title {
   font-weight: var(--fw-lg);
   color: var(--dark-blue);
+  font-size: 1rem;
 }
 
 .plan-price {
