@@ -1,0 +1,183 @@
+@import url("https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --pale-blue: hsl(225, 100%, 94%);
+  --bright-blue: hsl(245, 75%, 52%);
+
+  --very-pale-blue: hsl(225, 100%, 98%);
+  --desaturated-blue: hsl(224, 23%, 55%);
+  --dark-blue: hsl(223, 47%, 23%);
+
+  --fw-sm: 500;
+  --fw-md: 700;
+  --fw-lg: 900;
+}
+
+html {
+  font-size: 16px;
+  font-family: "Red Hat Display", sans-serif;
+}
+
+img,
+picture {
+  display: block;
+  max-width: 100%;
+}
+
+/* Card Styling Starts from here */
+
+body {
+  max-width: 1440px;
+  background-color: var(--pale-blue);
+  margin: 0 auto;
+}
+
+.card-container {
+  max-width: 1440px;
+  /* height: 100vh; */
+  height: auto;
+  background-image: url("./images/pattern-background-desktop.svg");
+  background-repeat: no-repeat;
+  background-position: cover;
+  /* border: 1px solid black; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 3rem;
+}
+
+.card {
+  max-width: 375px;
+  /* border: 2px solid black; */
+  display: flex;
+  flex-direction: column;
+  border-radius: 1rem;
+  /* gap: 2rem; */
+}
+
+.hero-img {
+  border-top-left-radius: 1rem;
+  border-top-right-radius: 1rem;
+}
+
+.card-summary-container {
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+
+  gap: 1.2rem;
+  padding: 2rem;
+  border-bottom-left-radius: 1rem;
+  border-bottom-right-radius: 1rem;
+  /* text-align: center; */
+}
+
+.summary-heading {
+  font-size: 1.5rem;
+  font-weight: var(--fw-lg);
+  text-align: center;
+  color: var(--dark-blue);
+}
+
+.summary-content {
+  color: var(--desaturated-blue);
+  text-align: center;
+  font-size: 0.9rem;
+  line-height: 1.3rem;
+}
+
+.price-plan-box {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--very-pale-blue);
+  padding: 1.5rem 1rem;
+  border-radius: 1rem;
+  font-size: 0.8rem;
+}
+
+.annual-plan {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  display: flex;
+  gap: 1rem;
+}
+
+.plan-change {
+  color: var(--bright-blue);
+  font-weight: var(--fw-lg);
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.plan-change:hover {
+  text-decoration: none;
+  color: hsla(245, 75%, 52%, 0.723);
+}
+
+.annual-plan-container {
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+}
+
+.plan-title {
+  font-weight: var(--fw-lg);
+  color: var(--dark-blue);
+}
+
+.plan-price {
+  font-size: 0.9rem;
+  font-weight: var(--fw-md);
+  color: var(--desaturated-blue);
+}
+
+.btn {
+  padding: 1rem 2rem;
+  border-radius: 0.7rem;
+  border: none;
+  font-weight: var(--fw-lg);
+  font-size: 0.8rem;
+  background: none;
+  cursor: pointer;
+}
+
+.payment-button {
+  background-color: var(--bright-blue);
+  color: var(--very-pale-blue);
+  box-shadow: rgba(0, 34, 255, 0.2) 0px 8px 24px;
+}
+
+.payment-button:hover {
+  background-color: hsla(245, 75%, 52%, 0.723);
+}
+
+.cancel-order-button {
+  color: var(--desaturated-blue);
+}
+
+.cancel-order-button:hover {
+  color: var(--dark-blue);
+}
+
+/* Mobile Screen */
+
+@media (max-width: 400px) {
+  html {
+    font-size: 13px;
+  }
+}
+
+@media (max-width: 350px) {
+  html {
+    font-size: 10px;
+  }
+}
